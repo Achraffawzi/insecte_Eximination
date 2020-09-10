@@ -1,0 +1,601 @@
+/* general rules */
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body {
+    font-family: serif, sans-serif;
+}
+
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+}
+
+.link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+    max-width: 1630px;
+}
+
+/* custom styling */
+.header {
+    background-color: brown;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navbar-light .navbar-brand {
+    color: #fff;
+}
+
+.header__logo {
+    /* background-color: lightpink; */
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+}
+
+.header__logo:hover {
+    color: #fff;
+}
+
+.navbar-brand {
+    white-space: normal;
+    color: #fff;
+}
+
+.header__barIcon {
+    color: #fff;
+}
+
+.navbar-toggler {
+    line-height: 2;
+    border-color: #fff;
+}
+
+.header__logoImage {
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.header__logoText {
+    font-size: 17px;
+    text-align: center;
+}
+
+.header__navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header__navbar > li {
+    margin: 0 15px 5px;
+    font-size: 17px;
+}
+
+.header__navbar > li > a {
+    transition: color .25s linear;
+}
+
+.header__navbar > li > a:hover {
+    color: #eb9605;
+}
+
+/* banner */
+.banner {
+    position: relative;
+    margin-bottom: 200px;
+}
+
+.banner__image {
+    width: 100%;
+    z-index: -1;
+}
+
+.banner__bottom {
+    padding: 40px 25px;
+    background-color: #fafafa;
+    width: 90%;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: -5rem auto;
+    z-index: 5;
+}
+
+.banner_title {
+    font-size: 25px;
+}
+
+.banner_description {
+    color: grey;
+    font-size: 25px;
+    margin-top: 20px;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* welcoming */
+.welcoming {
+    padding: 50px 30px;
+    background-color: #fafafa;
+}
+
+.welcoming__title {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: brown;
+}
+
+.welcoming__description {
+    font-size: 20px;
+    color: grey;
+}
+
+/* steps */
+.steps {
+    padding: 50px 20px;
+}
+
+.step {
+    margin-bottom: 20px;
+}
+
+.steps__title {
+    color: brown;
+    margin-bottom: 100px;
+}
+
+.step__icon {
+    font-size: 50px;
+    color: brown;
+    margin-bottom: 10px;
+}
+
+.step__description {
+    color: grey;
+    font-size: 19px;
+}
+
+/* identification */
+.identification {
+    padding: 50px 20px;
+}
+
+.identification__title {
+    color: brown;
+    margin-bottom: 40px;
+}
+
+.insecte {
+    color: #000;
+    font-size: 25px;
+    display: inline-block;
+    margin-bottom: 60px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-decoration: none;
+    transition: transform .2s ease-in-out;
+}
+
+.insecte:hover {
+    color: #eb9605;
+    transform: scale(1.5);
+}
+
+/* Identifiez l'animale nuisible */
+.animals {
+    padding: 50px 20px;
+}
+
+.animals__title {
+    display: inline-block;
+    color: brown;
+    margin-bottom: 100px;
+}
+
+.animal {
+    color: #000;
+    font-size: 25px;
+    display: inline-block;
+    margin-bottom: 60px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform .2s ease-in-out;
+}
+
+.animal:hover {
+    color: #eb9605;
+    transform: scale(1.5);
+}
+
+/* more info */
+.moreInfo {
+    padding: 50px 20px;
+}
+
+.into__title {
+    font-size: 28.5px;
+    color: brown;
+    margin-bottom: 30px;
+}
+
+.info__list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.singleInfo {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    line-height: 3;
+    /* justify-content: space-between; */
+}
+
+.info__pointer {
+    font-size: 20px;
+    color: brown;
+    margin-right: 20px;
+}
+
+.info__description {
+    font-size: 20px;
+}
+
+.info__geolocation {
+    width: 400px;
+    height: 300px;
+    object-fit: contain;
+}
+
+/* user types */
+.userTypes {
+    padding: 50px 20px;
+}
+
+.userTypes__title {
+    font-size: 28px;
+    color: brown;
+    margin-bottom: 30px;
+}
+
+.type__image {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.type__title {
+    font-size: 25px;
+    color: brown;
+    margin-bottom: 15px;
+}
+
+.type__description {
+    font-size: 18.5px;
+    line-height: 1.3;
+    color: grey;
+}
+
+/* contact us */
+.contactUs {
+	/* height: 300px; */
+	padding: 50px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: var(--mainColor);
+	background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, 0.6)), url(../images/contact.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* margin-bottom: 100px; */
+}
+
+.contactUs__input {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff!important;
+    font-size: 22px;
+}
+
+.contactUs__input::placeholder {
+    color: #fff;
+    opacity: 0.7;
+}
+
+.contactUs__input:focus {
+    background-color: transparent;
+}
+
+.contactUs__submitBtn {
+    width: -moz-fit-content;
+}
+
+/* footer */
+.footer {
+    padding: 50px 20px 0;
+}
+
+.footer__email {
+    font-size: 17px;
+}
+
+.footer__middle {
+    margin-top: 50px;
+}
+
+.footer__icon {
+    font-size: 40px;
+    margin: 0 20px;
+}
+
+.footer__right {
+    font-size: 22px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+/* ============================ fourmis ================================ */
+.mainContent {
+    padding: 50px 20px;
+}
+
+.mainContent__title {
+    margin-bottom: 100px;
+    color: brown;
+}
+
+.specie {
+    margin-bottom: 160px;
+}
+
+.specie__name {
+    font-size: 30px;
+    color: brown;
+    margin-bottom: 22px;
+}
+
+.specie__image {
+    margin-bottom: 30px;
+}
+
+.specie__description {
+    font-size: 17.5px;
+}
+
+/* ============================ Punaise de lit ============================ */
+.mainTop__title {
+    font-size: 20px;
+    color: brown;
+    margin-bottom: 10px;
+}
+
+.iframeContainer{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+}
+.iframeContainer iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.howWeWork {
+    padding: 50px 0;
+}
+
+.howWeWork__title {
+    font-size: 25px;
+    color: brown;
+}
+
+.howToWork__description {
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.mainBottom {
+    overflow: hidden;
+}
+
+/* =========================== Chenilles ================================== */
+.mainSectionTop {
+    padding: 50px 20px;
+}
+
+.leftPart {
+    font-size: 18px;
+    line-height: 2;
+}
+
+.bottomPart {
+    font-size: 18px;
+    line-height: 2;
+}
+
+/* =========================== poisson d'argent ================================== */
+.mainSection{
+    padding: 50px 20px;
+}
+
+.mainSection__image {
+    transition: transform .2s ease-in-out;
+}
+
+.mainSection__image:hover {
+    transform: scale(1.5);
+}
+
+.mainSection__title {
+    font-size: 20px;
+}
+
+.mainSection__description {
+    font-size: 17px;
+}
+
+/* ======================================= animal 1 ===================================== */
+.rightPart {
+    transition: transform .2s ease-in-out;
+    margin-top: 60px;
+}
+
+.rightPart:hover {
+    transform: scale(1.5);
+}
+
+/* ============================ who are we ================================ */
+.whoAreWeBody {
+    background-image: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), url(../images/whoAreWe.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+}
+
+.whoAreWe {
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 50%;
+    margin: 200px auto 0;
+    border-radius: 5px;
+}
+
+.whoAreWe__title {
+    color: brown;
+    margin-bottom: 20px;
+}
+
+.whoAreWe__description {
+    line-height: 1.4;
+    color: grey;
+    font-size: 20px;
+}
+
+/* ============================ souris & rats ================================ */
+.plantBanner {
+    height: calc(100vh - 100px);
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, 0.3)), url(../images/plants2.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.plantBanner__captionImage {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.plantBanner__captionText1 {
+    font-size: 50px;
+}
+
+.plantBanner__captionText2 {
+    font-size: 25px;
+    color: #fff;
+}
+
+.mainTop {
+    padding: 50px 20px;
+    margin-top: 100px;
+}
+
+.mainTop__description {
+    font-size: 18px;
+}
+
+.mainMiddle__title {
+    color: brown;
+    margin-bottom: 40px;
+    font-size: 20px;
+}
+
+.mainMiddle {
+    padding: 50px 20px;
+}
+
+.mainMiddle__description {
+    line-height: 1.4;
+    font-size: 20px;
+}
+
+.mainBottom {
+    padding: 50px 20px;
+}
+
+.mainBottom__title {
+    color: brown;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+.mainBottom__description {
+    font-size: 18px;
+}
+
+.plantBannerInsectes {
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, 0.3)), url(../images/worm.jpg);
+}
+
+.plantBannerInsectes__captionText1 {
+    color: brown;
+}
+
+.plantBannerInsectes__captionText2 {
+    margin-bottom: 50px;
+}
+
+/* ============================ capture animaux ================================ */
+.carousel-item {
+    height: 86vh;
+}
+
+.carousel-item > img {
+    height: 100%;
+}
+
+.introText,
+.outroText {
+    margin: 50px 20px;
+    font-size: 22px;
+}
+
+/* ============================ Contact Us ================================ */
+.ContactUsmainPage {
+    padding: 50px 270px;
+    height: calc(100vh - 100px);
+}

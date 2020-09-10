@@ -1,0 +1,64 @@
+@media screen and (max-width: 1148px) {
+    /* header */
+    .header__logo {
+        width: 100%;
+        margin: 0 auto 20px;
+    }
+
+    .header__navbar {
+        margin:0 auto 10px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer__image {
+        margin: auto;
+    }
+
+    /* who we are */
+    .whoAreWe {
+        margin: 50px auto 0;
+        width: 95%;
+    }
+
+    /* ============================ Contact Us ================================ */
+    .contactUs {
+        padding: 40px 100px;
+    }
+
+    .contactUs__input {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 839px) {
+    .plantBanner__captionText1 {
+        font-size: 45px;
+    }
+}
+
+@media screen and (max-width: 551px) {
+    .plantBanner__captionText1 {
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .plantBanner__captionText2 {
+        font-size: 15px;
+        letter-spacing: normal;
+    }
+
+    /* ============================ Contact Us ================================ */
+    .contactUs {
+        padding: 20px 20px;
+    }
+
+    .contactUs__input {
+        margin-bottom: 10px;
+    }
+}
